@@ -8,7 +8,7 @@ public class StackCountingOutRhymer {
     private static final int EMPTY_DEFAULT_RETURN_VALUE = -1;
     private int[] numbers = new int[NUMBERS_MAX_SIZE];
 
-    public int currentNumberIndex = NUMBERS_EMPTY_INDEX;
+    private int currentNumberIndex = NUMBERS_EMPTY_INDEX;
 
     public void countIn(int newNumber) {
         if (!isFull())
@@ -34,6 +34,4 @@ public class StackCountingOutRhymer {
             return EMPTY_DEFAULT_RETURN_VALUE;
         return numbers[currentNumberIndex];
     }
-
-
 }
