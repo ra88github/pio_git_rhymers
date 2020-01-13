@@ -2,7 +2,7 @@ package edu.kis.vh.nursery.factory;
 
 import edu.kis.vh.nursery.StackCountingOutRhymer;
 
-public interface Rhymersfactory {
+public interface RhymersFactory {
 
     public StackCountingOutRhymer GetStandardRhymer();
 
