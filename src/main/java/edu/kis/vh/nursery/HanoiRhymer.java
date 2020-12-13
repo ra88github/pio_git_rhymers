@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery;
 
-public class HanoiRhymer extends StackCountingOutRhymer {
+public class HanoiRhymer extends DefaultCountingOutRhymer {
 
     int totalRejected = 0;
 
@@ -9,7 +9,7 @@ public class HanoiRhymer extends StackCountingOutRhymer {
     }
 
     public void countIn(int in) {
-        if (!isEmpty() && in > peek())
+        if (!isEmpty() && in > peekaboo())
             totalRejected++;
         else
             super.countIn(in);
