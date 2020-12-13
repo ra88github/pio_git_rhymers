@@ -3,6 +3,7 @@ package edu.kis.vh.nursery.list;
 public class IntLinkedList {
 
     private static final int EMPTY_VALUE = -1;
+    
     Node last;
     int i;
 
